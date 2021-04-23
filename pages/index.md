@@ -14,14 +14,15 @@ permalink: /
 
 {{site.collection_order[0]}}
 
-# xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE
+# (xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE)
 
 <br>
 > Hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
 
 ## Features
 
-- Highly customizable with user-friendly hacker-like design.
+[//]: # "- Highly customizable with user-friendly hacker-like design."
+
 - Easy to gather your notes or portfolios with multiple collection design.
 - Supports formula insertion with `MathJax`.
 <div style="color: rgb(233, 32, 32)">
