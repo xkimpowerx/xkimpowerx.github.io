@@ -59,6 +59,30 @@ for i in range(n):
     print ("%d" %arr[i]),
 ```
 
+- BannerGrabber
+
+```python
+#!/usr/bin/python3
+
+import socket
+
+
+def banner(ip, port):
+    s = socket.socket()
+    s.connect((ip, int(port)))
+    s.settimeout(5)
+    print(str(s.recv(1024)).strip('b'))
+
+
+def main():
+    ip = input("Please enter the IP: ")
+    port = str(input("Please enter the port: "))
+    banner(ip, port)
+
+
+main()
+```
+
 - Decrypt and encrypt text (access token: 233):
   - secret msg example:
   <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">Encrypted content!</p>
