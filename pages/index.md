@@ -14,7 +14,7 @@ permalink: /
 
 {{site.collection_order[0]}}
 
-# (xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE)
+# xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE
 
 <br>
 > Hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
@@ -90,14 +90,14 @@ for i in range(n):
 - unordered list
   - sublist
 
-### Table
+[//]: # (### Table
 
 | Date         | Version   | Size    | Comment                |
-| :----------- | :-------- | :------ | :--------------------- |
+| :----------- | :-------- | :------ | :--------------------- | --- |
 | Nov 11, 2018 | v2.14c    | 240 kb  | No irreversible damage |
 | Nov 12, 2018 | v2.14c    | 1230 kb | No irreversible damage |
 | Nov 13, 2018 | v2.14c    | 12kb    | No irreversible damage |
-| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    |
+| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    | )   |
 
 ### More Texts
 
