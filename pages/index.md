@@ -34,6 +34,8 @@ $$
 
 ### Python Tools
 
+- Quick Sort:
+
 ```python
 # Function to do Quick sort
 def quickSort(arr,low,high):
