@@ -19,9 +19,9 @@ permalink: /
 <br>
 > Hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
 
-## Features
+<!---## Features
 
-[//]: # "- Highly customizable with user-friendly hacker-like design."
+- Highly customizable with user-friendly hacker-like design."
 
 - Easy to gather your notes or portfolios with multiple collection design.
 - Supports formula insertion with `MathJax`.
@@ -30,7 +30,7 @@ $$
 NADH+Q+5\;H_{matrix}^{+}\rightarrow NAD^{+}+QH_{2}+4\;H_{intermembrane}^{+}\!
 $$
 </div>
-- Supports code highlight with `Rouge`.
+- Supports code highlight with `Rouge`.--->
 
 ```python
 # Function to do Quick sort
@@ -78,7 +78,7 @@ for i in range(n):
 - `keyword`
 - [Link to Google](www.google.com)
 
-### List
+<!---### List
 
 1. ordered list item 1
 2. ordered list item 2
@@ -88,16 +88,16 @@ for i in range(n):
 
 - unordered list
 - unordered list
-  - sublist
+  - sublist--->
 
-[//]: # (### Table
+<!---### Table
 
 | Date         | Version   | Size    | Comment                |
-| :----------- | :-------- | :------ | :--------------------- | --- |
+| :----------- | :-------- | :------ | :--------------------- |
 | Nov 11, 2018 | v2.14c    | 240 kb  | No irreversible damage |
 | Nov 12, 2018 | v2.14c    | 1230 kb | No irreversible damage |
 | Nov 13, 2018 | v2.14c    | 12kb    | No irreversible damage |
-| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    | )   |
+| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    |--->
 
 ### More Texts
 
