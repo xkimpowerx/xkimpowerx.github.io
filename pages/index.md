@@ -17,7 +17,7 @@ permalink: /
 # xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE
 
 <br>
-> pRoJEct-NeGYa is a hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
+> Hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
 
 ## Features
 
