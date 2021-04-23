@@ -38,7 +38,7 @@ collections:
       - portfolio2.md
       - portfolio1.md
   album:
-    output          : true
+    output          : false 
     permalink       : /:collection/:title/
     sort_by         : date
   physics:
