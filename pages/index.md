@@ -17,7 +17,7 @@ permalink: /
 # xkimpowerx - HACKER-STYLE PERSONAL HOMEPAGE
 
 <br>
-> Hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
+> Hacker-like, highly-customizable theme for repository, personal-website or CV.
 
 <!---## Features
 
@@ -34,7 +34,7 @@ $$
 
 ### Python Tools
 
-- Quick Sort:
+<!---- Quick Sort:
 
 ```python
 # Function to do Quick sort
@@ -57,9 +57,9 @@ quickSort(arr,0,n-1)
 print ("Sorted array is:")
 for i in range(n):
     print ("%d" %arr[i]),
-```
+```--->
 
-- BannerGrabber
+- BannerGrabber:
 
 ```python
 #!/usr/bin/python3
@@ -83,9 +83,80 @@ def main():
 main()
 ```
 
-- Decrypt and encrypt text (access token: 233):
+- PortScanner:
+
+```python
+#!/usr/bin/python3
+
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.settimeout(5)
+
+host = input("Please enter the IP you want to scan: ")
+port = int(input("Please enter the port you want to scan: "))
+
+
+def port_scanner(port):
+    if s.connect_ex((host, port)):
+        print("The port is closed")
+    else:
+        print("Port is open")
+
+
+port_scanner(port)
+```
+
+- NmapScan:
+
+```python
+#!/usr/bin/python3
+
+import nmap
+
+scanner = nmap.PortScanner()
+
+print("Welcome, this is a simple nmap automation tool")
+print("<---------------------------------------------------------->")
+
+ip_address = input("Please enter the IP address you want to scan: ")
+print(f"The IP you entered is: {ip_address}")
+type(ip_address)
+
+response = input("""\nPlease enter the type of scan you want to run
+                    1)SYN ACK Scan
+                    2)UDP Scan
+                    3)Comprehensive Scan \n""")
+print(f"You have selected the option: {response}")
+
+if response == "1":
+    print(f"Nmap version: {scanner.nmap_version()}")
+    scanner.scan(ip_address, "1-1024", "-v -sS")
+    print(scanner.scaninfo())
+    print(f"IP Status: {scanner[ip_address].state()}")
+    print(scanner[ip_address].all_protocols())
+    print(f"Open Ports: {scanner[ip_address]['tcp'].keys()}")
+elif response == "2":
+    print(f"Nmap version: {scanner.nmap_version()}")
+    scanner.scan(ip_address, "1-1024", "-v -sU")
+    print(scanner.scaninfo())
+    print(f"IP Status: {scanner[ip_address].state()}")
+    print(scanner[ip_address].all_protocols())
+    print(f"Open Ports: {scanner[ip_address]['udp'].keys()}")
+elif response == "3":
+    print(f"Nmap version: {scanner.nmap_version()}")
+    scanner.scan(ip_address, "1-1024", "-v -sS -sV -sC -A -O")
+    print(scanner.scaninfo())
+    print(f"IP Status: {scanner[ip_address].state()}")
+    print(scanner[ip_address].all_protocols())
+    print(f"Open Ports: {scanner[ip_address]['tcp'].keys()}")
+else:
+    print("Please enter a valid option")
+```
+
+<!---- Decrypt and encrypt text (access token: 233):
   - secret msg example:
-  <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">Encrypted content!</p>
+  <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">Encrypted content!</p>--->
 
 ## Download and Documentation
 
@@ -95,16 +166,16 @@ main()
 
 [中文自述及使用教程](https://akiritsu.github.io/pRoJEct-VeXEd/posts/readme/)
 
-## More Samples
+<!---## More Samples--->
 
-### Font style and link
+<!---### Font style and link
 
 - normal
 - **bold**
 - _italic_
 - ~~strikethrough~~
 - `keyword`
-- [Link to Google](www.google.com)
+- [Link to Google](www.google.com)--->
 
 <!---### List
 
@@ -127,15 +198,15 @@ main()
 | Nov 13, 2018 | v2.14c    | 12kb    | No irreversible damage |
 | Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    |--->
 
-### More Texts
+<!---### More Texts
 
 Λορεμ ιπσθμ δολορ σιτ αμετ, νονθμυ δολορεσ πρινcιπεσ εαμ αν, ρεγιονε σθσcιπιτ αccθσατα νε πρι, εα εαμ γραεcο μελιθσ αccθσαμ. Vολθπτθα δισσεντιασ τε ηασ, τε πρι σθασ ηαρθμ αδιπισcινγ. Qθο ατ ιθστο ταcιματεσ, μελ εραντ ρεπθδιανδαε ετ. Ετ τιμεαμ cονcεπταμ αccομμοδαρε νεc, ιδ σεα μελιορε λθπτατθμ. Αδ περσεcθτι cοντεντιονεσ θσθ. Ηομερο νοστρο θταμθρ εαμ εξ.
 
-Νεc ιδ λεγερε ρεγιονε διcερετ, vιμ εθ νιβη ιριθρε cορπορα. Αδ vιξ διcο νατθμ εσσεντ. Ιλλθδ αλιqθιδ ει σιτ, δοcτθσ vιδισσε δετραξιτ αν μεα. Ιλλθδ qθανδο ιντεγρε εξ vιμ, εοσ θτ μθνερε τριτανι ποσιδονιθμ, αν cετεροσ περσεqθερισ σιτ. Λατινε δισcερε vοcιβθσ πρι νο, vιμ cθ νοστρο μαλθισσετ vολθπταρια.
+Νεc ιδ λεγερε ρεγιονε διcερετ, vιμ εθ νιβη ιριθρε cορπορα. Αδ vιξ διcο νατθμ εσσεντ. Ιλλθδ αλιqθιδ ει σιτ, δοcτθσ vιδισσε δετραξιτ αν μεα. Ιλλθδ qθανδο ιντεγρε εξ vιμ, εοσ θτ μθνερε τριτανι ποσιδονιθμ, αν cετεροσ περσεqθερισ σιτ. Λατινε δισcερε vοcιβθσ πρι νο, vιμ cθ νοστρο μαλθισσετ vολθπταρια.--->
 
-### More Codes
+<!---### More Codes--->
 
-```python
+<!---```python
 # Python program for implementation of Quicksort Sort
 
 # This function takes last element as pivot, places
@@ -158,12 +229,12 @@ def partition(arr,low,high):
             arr[i],arr[j] = arr[j],arr[i]
 
     arr[i+1],arr[high] = arr[high],arr[i+1]
-    return ( i+1 )
+    return ( i+1 )--->
 
-# The main function that implements QuickSort
-# arr[] --> Array to be sorted,
-# low  --> Starting index,
-# high  --> Ending index
+<!---# The main function that implements QuickSort
+# arr[] -> Array to be sorted,
+# low  -> Starting index,
+# high  -> Ending index
 
 # Function to do Quick sort
 def quickSort(arr,low,high):
@@ -187,4 +258,4 @@ for i in range(n):
     print ("%d" %arr[i]),
 
 # This code is contributed by Mohit Kumra
-```
+```--->
